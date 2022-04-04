@@ -5,8 +5,8 @@ const TableHeader = () => {
   return (
     <thead>
       <tr>
-        <th>Name</th>
-        <th>URL</th>
+        <th>Name&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</th>
+        <th>URL&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</th>
         <th>Remove</th>
       </tr>
     </thead>
@@ -34,9 +34,13 @@ const TableBody = (props) => {
 }
 
 const Table = (props) => {
-  {
-    /*TODO - return <table> component, TableHeader and TableBody  and pass props!*/
-  }
+  return (
+    <table>
+      <TableHeader />
+      <TableBody linkData = {props.linkData} removeLink = {props.removeLink} />
+    </table>
+  )
+  
 }
 
 export default Table
